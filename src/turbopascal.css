@@ -1,2 +1,13 @@
 /* turbopascal.css */
 
+/* Color palette */
+.color-palette {
+    /* Background */
+    background-color: midnightblue;
+
+    /* Font */
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+    font-weight: 500;
+
+}
