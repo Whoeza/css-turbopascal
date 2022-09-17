@@ -1,13 +1,37 @@
 /* turbopascal.css */
 
+/*****************/
 /* Color palette */
-.color-palette {
-    /* Background */
-    background-color: midnightblue;
+/*****************/
 
-    /* Font */
+/* Page colors */
+.color-background {
+    background-color: #000080;
+}
+.color-font {
     font-family: 'Courier New', Courier, monospace;
-    color: yellow;
-    font-weight: 500;
+    color: #ffff00;
+    font-weight: 600;
+}
+.color-keywords {
+    color: #ffffff;
+}
 
+/* Bars colors */
+.color-bar-background {
+    background-color: #c0c0c0;
+}
+.color-bar-font {
+    color: #000000;
+}
+.color-font-initials {
+    color: #800000;
+}
+
+.bar {
+    background-color: #c0c0c0;
+    color: #000000;
+}
+.bar.color-font-initials {
+    color: #800000;
 }
