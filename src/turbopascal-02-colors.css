@@ -1,0 +1,34 @@
+/* turbopascal-02-colors.css */
+
+/* * *   Colors   * * */
+
+/*** Palette ***/
+/* Global scope */
+:root {
+    /*** Foreground colors ***/
+    --turbopascal-fg-black: #000000;
+    --turbopascal-fg-blue: #000aad;
+    --turbopascal-fg-green-dark: #008e00;
+    --turbopascal-fg-turqoise: #0099aa;
+    --turbopascal-fg-red: #b51000;
+    --turbopascal-fg-magenta: #b31bac;
+    --turbopascal-fg-brown: #af5800;
+    --turbopascal-fg-grey: #aaaaaa;
+    --turbopascal-fg-grey-dark: #555555;
+    --turbopascal-fg-blue-light: #525fff;
+    --turbopascal-fg-green: #4be352;
+    --turbopascal-fg-cyan: #49eeff;
+    --turbopascal-fg-red-light: #ff6552;
+    --turbopascal-fg-magenta-light: #ff70ff;
+    --turbopascal-fg-yellow: #fff451;
+    --turbopascal-fg-white: #ffffff;
+    /*** Background colors ***/
+    --turbopascal-bg-black: #000000;
+    --turbopascal-bg-blue: #000aad;
+    --turbopascal-bg-green-dark: #008e00;
+    --turbopascal-bg-turqoise: #0099aa;
+    --turbopascal-bg-red: #b51000;
+    --turbopascal-bg-magenta: #b31bac;
+    --turbopascal-bg-brown: #af5800;
+    --turbopascal-bg-grey: #aaaaaa;
+}

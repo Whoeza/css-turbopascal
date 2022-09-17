@@ -1,0 +1,12 @@
+/* turbopascal-04-components-menu.css */
+
+/* * *   Components :: Menu  * * */
+
+/*** Menu TODO ***/
+.menu {
+    background-color: var(--turbopascal-bg-grey);
+    color: var(--turbopascal-fg-black);
+}
+.menu .shortcut {
+    color: var(--turbopascal-fg-red);
+}

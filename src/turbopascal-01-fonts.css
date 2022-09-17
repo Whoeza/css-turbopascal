@@ -1,0 +1,14 @@
+/* turbopascal-01-fonts.css */
+
+/* * *   Fonts   * * */
+
+.editor-fonts * {
+    /* TODO */
+    /* How to load a custom font from my PC? */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.frame {
+    text-transform: uppercase;
+    text-align: center;
+}

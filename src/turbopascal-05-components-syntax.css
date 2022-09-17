@@ -1,0 +1,8 @@
+/* turbopascal-05-components-syntax.css */
+
+/* * *   Components :: Syntax  * * */
+
+/*** Syntax TODO ***/
+.syntax .keyword {
+    color: var(--turbopascal-fg-white);
+}

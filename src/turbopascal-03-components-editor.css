@@ -1,0 +1,65 @@
+/* turbopascal-03-components-editor.css */
+
+/* * *   Components :: Editor   * * */
+
+/*** Editor ***/
+.editor,
+.editor *
+{
+    /* TODO */
+    /* Put the common parts in one 'editor' class. */
+    /* Define each single variations in separate classes. */
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-yellow);
+    /* Scroll bar color */
+    /* TODO */
+    /* Editor > Scroll bar */
+    /* The scroll bar was made of foreground and background points. */
+    /* background-color: var(--turbopascal-bg-turqoise); */
+    /* color: var(--turbopascal-fg-blue); */
+}
+/* Selected text inside the editor. */
+.editor::selection,
+.editor *::selection
+{
+    background-color: var(--turbopascal-bg-grey);
+    color: var(--turbopascal-fg-blue);
+}
+
+/* Editor > Frame */
+/* The frame is the vertical and horizontal lines inside the editor box. Includes the filename. */
+.editor .frame,
+.editor .frame::selection /* XXX Color trick, can't select frames. */
+{ 
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Editor > Frame > Passive/Active/Icons */
+.editor .frame .active {
+    color: var(--turbopascal-fg-white);
+}
+.editor .frame .passive,
+.editor .frame .passive::selection /* XXX Color trick, can't select frames. */
+{
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-grey);
+}
+.editor .frame .icons,
+.editor .frame .icons::selection /* XXX Color trick, can't select frames. */
+{
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-green);
+}
+
+/* Text in error messages. */
+.editor-error-message {
+    background-color: var(--turbopascal-bg-red);
+    color: var(--turbopascal-fg-yellow);
+}
+
+/* Editor > Scrollbar */
+/* TODO */
+/* How to color the scroll bars inside the editor window? */
