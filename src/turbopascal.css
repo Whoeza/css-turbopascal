@@ -39,28 +39,68 @@
     --turbopascal-bg-brown: #af5800;
     --turbopascal-bg-grey: #aaaaaa;
 }
-
-
-/*** Editor page ***/
-.editor-page {
-    background-color: #000080;
+/*** Editor ***/
+.editor {
+    /* TODO */
+    /* Put the common parts in one 'editor' class. */
+    /* Define each single variations in separate classes. */
+    background-color: var(--turbopascal-bg-blue);
     color: var(--turbopascal-fg-yellow);
 }
-.editor-page .keyword {
+.editor .keyword {
     color: #ffffff;
 }
 
-.editor-page .page-name {
+.editor .page-name {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
 }
 
-/*** Editor bars ***/
-.bar {
+
+/* The frame is the vertical and horizontal lines inside the editor box. */
+.editor-frame-passive {
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-grey);
+}
+.editor-frame-active {
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-white);
+}
+.editor-frame-icons {
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-green);
+}
+/* The scroll bar was made of foreground and background points. */
+.editor-scroll-bar-page {
+    background-color: var(--turbopascal-bg-turqoise);
+    color: var(--turbopascal-fg-blue);
+}
+.editor-scroll-bar-icons {
+    background-color: var(--turbopascal-bg-turqoise);
+    color: var(--turbopascal-fg-blue);
+}
+/* Normal text and selected text. */
+.editor-normal-text {
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-yellow);
+}
+.editor-normal-text::selection {
+    background-color: var(--turbopascal-bg-grey);
+    color: var(--turbopascal-fg-blue);
+}
+/* Text in error messages. */
+.editor-error-message {
+    background-color: var(--turbopascal-bg-red);
+    color: var(--turbopascal-fg-yellow);
+}
+
+
+/*** Menus ***/
+.menu {
     background-color: #c0c0c0;
     color: #000000;
 }
-.bar .key-shortcut {
+.menu .shortcut {
     color: #800000;
 }
