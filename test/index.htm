@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="../src/turbopascal-00-styles.css" rel="stylesheet">
         <link href="../src/turbopascal-01-fonts.css" rel="stylesheet">
         <link href="../src/turbopascal-02-colors.css" rel="stylesheet">
         <link href="../src/turbopascal-03-components-editor.css" rel="stylesheet">
@@ -26,7 +27,7 @@
             </ul>
         </nav>
         
-        <section class="editor">
+        <div class="editor">
             <header class="frame">
                 Frame title
                 <!-- This is the text area for the name of the file, which in this case is the name of the current page. -->
@@ -55,7 +56,43 @@
 
             </p>
             
-        </section>
+        </div>
+
+        <div class="dialog">
+            <menu>
+                This is a menu
+                <li>
+                    Option A
+                </li>
+                <li>
+                    Option B
+                </li>
+                <li>
+                    Option C
+                </li>
+                
+
+            </menu>
+
+            <div class="frame">
+                <button class="default">
+                    <span class="shortcut">D</span>efault
+                </button>
+
+                <button class="button">
+                    <span class="shortcut">C</span>lass me
+                </button>
+
+                <button>
+                    <span class="shortcut">I</span>'m a button!
+                </button>
+
+                <button class="disabled">
+                    Disabled.
+
+                </button>
+            </div>
+        </div>
 
 
         <footer class="menu">

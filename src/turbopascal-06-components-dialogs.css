@@ -1,0 +1,131 @@
+/* turbopascal-06-components-dialogs.css */
+
+/* * *   Components :: Dialogs  * * */
+
+/*** Dialogs TODO ***/
+.dialog
+{
+    scrollbar-color: var(--turbopascal-fg-blue) var(--turbopascal-bg-turqoise);
+}
+
+/* Dialog > Frame */
+.dialog .frame
+{
+    background-color: var(--turbopascal-bg-grey);
+    color: var(--turbopascal-fg-white);
+}
+.dialog .frame .icons
+{
+    color: var(--turbopascal-fg-green);
+}
+
+/* Dialog > Static text, Labels */
+.dialog .static, .dialog .label
+{
+    background-color: var(--turbopascal-bg-grey);
+    color: var(--turbopascal-fg-black);
+}
+.dialog .label:active
+{
+    color: var(--turbopascal-fg-white);
+}
+.dialog .label .shortcut
+{
+    color: var(--turbopascal-fg-yellow);
+}
+
+/* Dialog > Button */
+.dialog button,
+.dialog .button
+{
+    box-shadow: 0.5em 0.5em var(--turbopascal-bg-black);
+    background-color: var(--turbopascal-bg-green-dark);
+    color: var(--turbopascal-fg-black);
+}
+.dialog button.default,
+.dialog .button.default
+{
+    color: var(--turbopascal-fg-cyan);
+}
+.dialog button:hover,
+.dialog .button:hover
+{
+    color: var(--turbopascal-fg-white);
+}
+.dialog button.disabled,
+.dialog .button.disabled
+{
+    background-color: var(--turbopascal-bg-grey);
+    color: var(--turbopascal-fg-grey-dark);
+}
+.dialog button .shortcut,
+.dialog .button .shortcut
+{
+    color: var(--turbopascal-fg-yellow);
+}
+
+/* Dialog > Cluster */
+.dialog .cluster
+{
+    background-color: var(--turbopascal-bg-turqoise);
+    color: var(--turbopascal-fg-black);
+}
+.dialog .cluster *::selection
+{
+    color: var(--turbopascal-fg-white);
+}
+.dialog .cluster .shortcut
+{
+    color: var(--turbopascal-fg-yellow);
+}
+.dialog .cluster .disabled
+{
+    color: var(--turbopascal-fg-grey-dark);
+}
+
+/* Dialog > Input */
+.dialog input,
+.dialog .input
+{
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-white);
+}
+.dialog input:hover,
+.dialog .input:hover
+{
+    background-color: var(--turbopascal-bg-green-dark);
+}
+.dialog input .arrow,
+.dialog .input .arrow
+{
+    color: var(--turbopascal-fg-green);
+}
+
+/* Skipping Dialog > History. */
+
+/* Dialog > List */
+.dialog ul li,
+.dialog ol li,
+.dialog menu li
+{
+    background-color: var(--turbopascal-bg-turqoise);
+    color: var(--turbopascal-fg-black);
+}
+.dialog ul li:hover,
+.dialog ol li:hover,
+.dialog menu li:hover
+{
+    background-color: var(--turbopascal-bg-green-dark);
+    color: var(--turbopascal-fg-white);
+}
+.dialog ul li:active,
+.dialog ol li:active,
+.dialog menu li:active
+{
+    color: var(--turbopascal-fg-yellow);
+}
+.dialog menu
+{
+    border-color: var(--turbopascal-fg-blue);
+    border-style: none;
+}

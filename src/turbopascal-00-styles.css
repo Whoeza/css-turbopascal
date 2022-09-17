@@ -1,0 +1,10 @@
+/* turbopascal-00-styles.css */
+
+/* * *   Styles   * * */
+
+ul,
+ol,
+menu 
+{
+    list-style: none;
+}
