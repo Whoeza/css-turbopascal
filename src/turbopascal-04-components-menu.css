@@ -16,8 +16,8 @@
 {
     color: var(--turbopascal-fg-red);
 }
-.menu::selection,
-.menu *::selection
+.menu ul li:hover,
+.menu ul li *:hover
 {
     background-color: var(--turbopascal-bg-green-dark);
 }
