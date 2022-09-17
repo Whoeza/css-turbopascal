@@ -6,6 +6,14 @@
 .dialog
 {
     scrollbar-color: var(--turbopascal-fg-blue) var(--turbopascal-bg-turqoise);
+    /* Text of this component can't be selected. */
+    /* TODO */
+    /* Instead of pasting this code onto every component, how can they all share this feature otherwise? */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 /* Dialog > Frame */
@@ -128,4 +136,9 @@
 {
     border-color: var(--turbopascal-fg-blue);
     border-style: none;
+}
+.dialog .information-panel
+{
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-turqoise);
 }

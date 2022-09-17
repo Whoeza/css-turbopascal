@@ -2,11 +2,21 @@
 
 /* * *   Components :: Menu  * * */
 
+/* *   Colors   * */
+
 /*** Menu ***/
 .menu
 {
     background-color: var(--turbopascal-bg-grey);
     color: var(--turbopascal-fg-black);
+    /* Text of this component can't be selected. */
+    /* TODO */
+    /* Instead of pasting this code onto every component, how can they all share this feature otherwise? */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 .menu .disabled
 {
@@ -20,4 +30,74 @@
 .menu ul li *:hover
 {
     background-color: var(--turbopascal-bg-green-dark);
+}
+
+
+/* *   Layout   * */
+/* TODO */
+/* Organize in tandem nav and footer. */
+/* They are both: */
+/*  - flexbox */
+/*  - horizontal */
+/*  - relative positioned */
+/*  - height max content, width auto */
+/*  - space-between */
+/* They differ in: */
+/*  - nav is top/left = 0 */
+/*  - footer is bottom/left = 0 */
+
+nav, footer
+{
+    height: max-content;
+    width: auto;
+
+    /* Flaxbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    /* Margins */
+    margin: 0;
+    padding: 0;
+}
+nav {
+    /* Relative position */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+footer {
+    /* Relative position */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+nav ul,
+footer ul
+{   
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+    overflow-x: visible;
+
+    /* Margins */
+    padding: 0;
+    margin: 0;
+    width: max-content;
+
+}
+nav ul li,
+footer ul li
+{
+    /* Margins */
+    width: max-content;
+    padding: 0px 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
 }

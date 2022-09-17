@@ -21,13 +21,20 @@
 
 /* Editor > Frame */
 /* The frame is the vertical and horizontal lines inside the editor box. Includes the filename. */
-.editor .frame,
-.editor .frame::selection /* XXX Color trick, can't select frames. */
+.editor .frame
 { 
     background-color: var(--turbopascal-bg-blue);
     color: var(--turbopascal-fg-white);
     text-transform: uppercase;
     text-align: center;
+    /* Text of this component can't be selected. */
+    /* TODO */
+    /* Instead of pasting this code onto every component, how can they all share this feature otherwise? */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 /* Editor > Frame > Passive/Active/Icons */
@@ -52,3 +59,11 @@
     background-color: var(--turbopascal-bg-red);
     color: var(--turbopascal-fg-yellow);
 }
+
+
+/* *   Layout   * */
+
+/* .editor
+{
+    height: 100%;
+} */

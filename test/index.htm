@@ -4,33 +4,63 @@
         <link href="../src/turbopascal-00-styles.css" rel="stylesheet">
         <link href="../src/turbopascal-01-fonts.css" rel="stylesheet">
         <link href="../src/turbopascal-02-colors.css" rel="stylesheet">
+        <link href="../src/turbopascal-02.01-colors-desktop.css" rel="stylesheet">
         <link href="../src/turbopascal-03-components-editor.css" rel="stylesheet">
         <link href="../src/turbopascal-04-components-menu.css" rel="stylesheet">
         <link href="../src/turbopascal-05-components-syntax.css" rel="stylesheet">
         <link href="../src/turbopascal-06-components-dialogs.css" rel="stylesheet">
 
+
+        
+
     </head>
     <body class="editor-fonts">
         <nav class="menu">
-            <p class="nav-title horizontal-bar">
-                This is the top menu bar.
-            </p>
-            
-            <ul class="nav-list">
-                <li class="disabled nav-list-element">Nav Elem 1</li>
-                <li class="nav-list-element">
-                    Nav Elem <span class="shortcut">2</span>
+            <ul>
+                <li>
+                    Menu <span class="shortcut">1</span>
                 </li>
-                <li class="nav-list-element">Nav Elem 3</li>
-                <li class="nav-list-element">Nav Elem 4</li>
+                <li class="disabled">
+                    Menu 2
+                </li>
+                <li>
+                    Menu <span class="shortcut">3</span>
+                </li>
+                <li>
+                    Menu <span class="shortcut">4</span>
+                </li>
+                <li>
+                    Menu <span class="shortcut">5</span>
+                </li>
+                <li>
+                    Menu <span class="shortcut">6</span>
+                </li>
+                <li>
+                    Menu <span class="shortcut">7</span>
+                </li>
+                <li>
+                    Menu <span class="shortcut">8</span>
+                </li>
+                <li>
+                    Menu <span class="shortcut">9</span>
+                </li>
+                <li>
+                    Menu <span class="shortcut">10</span>
+                </li>
                 
             </ul>
+
+            <div class="information-panel">
+                <p>
+                    This is the top menu bar.
+                </p>
+            
+            </div>
         </nav>
         
         <div class="editor">
             <header class="frame">
-                Frame title
-                <!-- This is the text area for the name of the file, which in this case is the name of the current page. -->
+                Frametitle.pas
             </header>    
 
             <p>
@@ -59,8 +89,7 @@
         </div>
 
         <div class="dialog">
-            <menu>
-                This is a menu
+            <ul>
                 <li>
                     Option A
                 </li>
@@ -71,8 +100,13 @@
                     Option C
                 </li>
                 
+                <div class="information-panel">
+                    <p>
+                        This is the information panel of a dialog.
+                    </p>
+                </div>
 
-            </menu>
+            </ul>
 
             <div class="frame">
                 <button class="default">
@@ -96,18 +130,43 @@
 
 
         <footer class="menu">
-            <p class="footer-title horizontal-bar">This is the bottom menu bar.</p>
-            <p>
-                <span class="reserved-word">This</span>
-                 
-                <span class="reserved-word">is</span>
-                 an example of keywords NOT highlighting
-                  
-                 <span class="reserved-word">in</span>
-                  the bar.
+            <ul>
+                <li>
+                    <span class="shortcut">
+                        F1
 
-            </p>
+                    </span>
+                    Help
 
+                </li>
+
+                <li>
+                    <span class="shortcut">
+                        F2
+
+                    </span>
+                    Reboot
+
+                </li>
+            </ul>
+
+            <div class="static">
+                <p class="footer-title horizontal-bar">
+                    This is the bottom menu bar.
+                
+                </p>
+
+                <p>
+                    <span class="reserved-word">This</span>
+                    
+                    <span class="reserved-word">is</span>
+                    an example of keywords NOT highlighting
+                    
+                    <span class="reserved-word">in</span>
+                    the bar.
+
+                </p>
+            </div>
         </footer>
     </body>
 </html>
