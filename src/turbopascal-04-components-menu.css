@@ -7,6 +7,11 @@
     background-color: var(--turbopascal-bg-grey);
     color: var(--turbopascal-fg-black);
 }
+.menu .disabled,
+.menu * .disabled
+{
+    color: var(--turbopascal-fg-grey-dark);
+}
 .menu .shortcut {
     color: var(--turbopascal-fg-red);
 }
