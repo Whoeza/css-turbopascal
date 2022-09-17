@@ -45,48 +45,56 @@
     --turbopascal-bg-brown: #af5800;
     --turbopascal-bg-grey: #aaaaaa;
 }
-/*** Editor (& Syntax TODO) ***/
-.editor, .syntax {
+/*** Editor ***/
+.editor,
+.editor *
+{
     /* TODO */
     /* Put the common parts in one 'editor' class. */
     /* Define each single variations in separate classes. */
     background-color: var(--turbopascal-bg-blue);
     color: var(--turbopascal-fg-yellow);
 }
-.editor .frame {
-    color: #ffffff;
+/* Selected text. */
+.editor::selection,
+.editor *::selection
+{
+    background-color: var(--turbopascal-bg-grey);
+    color: var(--turbopascal-fg-blue);
+}
+
+/* Editor > Frame */
+/* The frame is the vertical and horizontal lines inside the editor box. Includes the filename. */
+.editor .frame,
+.editor .frame::selection /* XXX Color trick, can't select frames. */
+{ 
+    background-color: var(--turbopascal-bg-blue);
+    color: var(--turbopascal-fg-white);
     text-transform: uppercase;
     text-align: center;
 }
-/* The frame is the vertical and horizontal lines inside the editor box. */
-.editor-frame-passive {
+
+/* Editor > Frame > Passive/Active/Icons */
+.editor .frame .active {
+    color: var(--turbopascal-fg-white);
+}
+.editor .frame .passive,
+.editor .frame .passive::selection /* XXX Color trick, can't select frames. */
+{
     background-color: var(--turbopascal-bg-blue);
     color: var(--turbopascal-fg-grey);
 }
-.editor-frame-active {
-    background-color: var(--turbopascal-bg-blue);
-    color: var(--turbopascal-fg-white);
-}
-.editor-frame-icons {
+.editor .frame .icons,
+.editor .frame .icons::selection /* XXX Color trick, can't select frames. */
+{
     background-color: var(--turbopascal-bg-blue);
     color: var(--turbopascal-fg-green);
 }
+
+/* Editor > Scroll bar */
 /* The scroll bar was made of foreground and background points. */
-.editor-scroll-bar-page {
+.editor-scroll-bar-page, .editor-scroll-bar-icons {
     background-color: var(--turbopascal-bg-turqoise);
-    color: var(--turbopascal-fg-blue);
-}
-.editor-scroll-bar-icons {
-    background-color: var(--turbopascal-bg-turqoise);
-    color: var(--turbopascal-fg-blue);
-}
-/* Normal text and selected text. */
-.editor-normal-text {
-    background-color: var(--turbopascal-bg-blue);
-    color: var(--turbopascal-fg-yellow);
-}
-.editor-normal-text::selection {
-    background-color: var(--turbopascal-bg-grey);
     color: var(--turbopascal-fg-blue);
 }
 /* Text in error messages. */
