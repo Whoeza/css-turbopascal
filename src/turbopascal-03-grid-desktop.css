@@ -1,0 +1,16 @@
+/* turbopascal-03-grid-desktop.css */
+
+/* * *   Component :: Desktop   * * */
+
+/* *   Layout   * */
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+    /* CSS Grid */
+    display: grid;
+
+}
