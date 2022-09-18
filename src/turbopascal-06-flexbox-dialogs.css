@@ -66,8 +66,6 @@
 {
     color: var(--turbopascal-fg-cyan);
 }
-.dialog button:hover,
-.dialog .button:hover,
 .dialog button:focus,
 .dialog .button:focus
 {

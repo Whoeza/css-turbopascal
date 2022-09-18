@@ -9,8 +9,19 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    
+
     /* CSS Grid */
     display: grid;
-
+    grid-template-columns: auto;
+    grid-template-rows: 1em auto 2em;
+    grid-template-areas: "top-menu" "editor-frame" "bottom-menu";
+}
+body nav.menu {
+    grid-area: top-menu;
+}
+body div.editor {
+    grid-area: editor-frame;
+}
+body footer.menu {
+    grid-area: bottom-menu;
 }

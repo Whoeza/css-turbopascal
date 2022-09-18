@@ -86,12 +86,13 @@
 
 textarea
 {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     
     width: 100%;
-    height: calc(100vh - 2em);
-    top: 3rem;
+    height: 100%;
     
+    top: 3rem;
+    margin: 0px;
     padding: 0px;
 
     white-space: pre;
@@ -100,6 +101,5 @@ textarea
 
     border-style: double;
     
-    height: 100%;
-    margin: 0px;
+    
 }
