@@ -48,56 +48,51 @@
 
 nav, footer
 {
-    height: max-content;
-    width: auto;
+    /* Fixed position */
+    position: fixed;
+    left: 0;
+    
+    /* Margins */
+    margin: 0;
+    padding: 0;
+    height: 1rem;
+    width: 100%;
 
     /* Flaxbox */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    /* Margins */
-    margin: 0;
-    padding: 0;
 }
 nav {
-    /* Relative position */
-    position: relative;
     top: 0;
-    left: 0;
 }
 footer {
-    /* Relative position */
-    position: relative;
     bottom: 0;
-    left: 0;
 }
 nav ul,
 footer ul
 {   
-    /* Flexbox */
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-start;
-    align-items: center;
-    overflow-x: visible;
-
     /* Margins */
     padding: 0;
     margin: 0;
     width: max-content;
+    /* Flexbox */
+    display: flex;
 
+    justify-items: space-around;
+    align-items: center;
+    overflow-x: visible;
 }
 nav ul li,
 footer ul li
 {
     /* Margins */
+    padding: 0px 0.5em;
     width: max-content;
-    padding: 0px 5px;
+    height: 100%;
 
+    /* Flexbox */
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    height: 100%;
 }

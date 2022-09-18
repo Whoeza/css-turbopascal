@@ -2,7 +2,8 @@
 
 /* * *   Components :: Editor   * * */
 
-/*** Editor ***/
+/* *   Colors   * */
+
 .editor,
 .editor *
 {
@@ -27,6 +28,7 @@
     color: var(--turbopascal-fg-white);
     text-transform: uppercase;
     text-align: center;
+    
     /* Text of this component can't be selected. */
     /* TODO */
     /* Instead of pasting this code onto every component, how can they all share this feature otherwise? */
@@ -63,7 +65,41 @@
 
 /* *   Layout   * */
 
-/* .editor
+.editor
 {
+    position: fixed;
+    inset: 0;
+    width: 100%;
     height: 100%;
-} */
+    /* margin-top: 0em;
+    margin-bottom: 1em; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.editor .frame
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+textarea
+{
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: calc(100vh - 2em);
+    top: 3rem;
+    
+    padding: 0px;
+
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow: scroll;
+
+    border-style: double;
+    
+    height: 100%;
+    margin: 0px;
+}
