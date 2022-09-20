@@ -1,0 +1,227 @@
+/* uxui.css */
+
+
+/* Basic settings while developing */
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+ul
+{
+    list-style: none;
+}
+body, 
+.dialog-container
+{
+    background-color: #EEEEEE;
+}
+button
+{
+    box-shadow: 0.5em 0.5em black;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+
+/** UI **/
+/* Colors palette */
+:root
+{
+    --tp-foreground-black: #000000;
+    --tp-foreground-blue: #000aad;
+    --tp-foreground-green-dark: #008e00;
+    --tp-foreground-turqoise: #0099aa;
+    --tp-foreground-red: #b51000;
+    --tp-foreground-magenta: #b31bac;
+    --tp-foreground-brown: #af5800;
+    --tp-foreground-grey: #aaaaaa;
+    --tp-foreground-grey-dark: #555555;
+    --tp-foreground-blue-light: #525fff;
+    --tp-foreground-green: #4be352;
+    --tp-foreground-cyan: #49eeff;
+    --tp-foreground-red-light: #ff6552;
+    --tp-foreground-magenta-light: #ff70ff;
+    --tp-foreground-yellow: #fff451;
+    --tp-foreground-white: #ffffff;
+    
+    --tp-background-black: #000000;
+    --tp-background-blue: #000aad;
+    --tp-background-green-dark: #008e00;
+    --tp-background-turqoise: #0099aa;
+    --tp-background-red: #b51000;
+    --tp-background-magenta: #b31bac;
+    --tp-background-brown: #af5800;
+    --tp-background-grey: #aaaaaa;
+
+    --tp-shadow-black: rgba(0, 0, 0, 0.90);
+}
+
+/* Scroll bars thumbs are blue and tracks are turqoise */
+*
+{
+    scrollbar-color: var(--tp-foreground-blue) var(--tp-background-turqoise);
+}
+/* Frame legend lines style is double */
+.frame
+{
+    border-style: double;
+    border-width: 4px;
+}
+/* Outline in textarea is disabled */
+textarea
+{
+    outline: none;
+}
+/* Can't select frame titles and menus */
+.menu ul li,
+legend,
+.dialog
+{
+    user-select: none;
+}
+
+
+/* MENUS */
+/* Grey background */
+.menu
+{
+    background-color: var(--tp-background-grey);
+}
+/* Black text */
+.menu
+{
+    color: var(--tp-foreground-black);
+}
+/* Red text for shortcut */
+.menu .shortcut
+{
+    color: var(--tp-foreground-red);
+}
+/* Dark green background when active or focused */
+.menu ul li:active,
+.menu ul li:focus
+{
+    background-color: var(--tp-background-green-dark);
+}
+/* Dark grey text when disabled */
+.menu ul li.disabled,
+.menu ul li.disabled .shortcut
+{
+    color: var(--tp-foreground-grey-dark);
+}
+
+
+/* EDITOR */
+/* Text in the editor is yellow */
+body,
+textarea
+{
+    color: var(--tp-foreground-yellow);
+}
+/* Text and border in the active frame legend is white */
+fieldset
+{
+    color: var(--tp-foreground-white);
+    border-color: var(--tp-foreground-white);
+}
+/* Background in the editor and in the active frame legend is blue. */
+body,
+textarea,
+.frame
+{
+    background-color: var(--tp-background-blue);
+}
+/* Text in selection is blue */
+textarea::selection
+{
+    color: var(--tp-foreground-blue);
+}
+/* Background in selection is grey */
+textarea::selection
+{
+    background-color: var(--tp-background-grey);
+}
+
+
+/* DIALOGS */
+/* Background in dialogs is grey */
+.dialog-container,
+.dialog-container fieldset,
+.dialog
+{
+    background-color: var(--tp-background-grey);
+}
+/* Text in dialogs is black */
+.dialog
+{
+    color: var(--tp-foreground-black);
+}
+/* Dialog container casts a transparent black shadow */
+.dialog-container
+{
+    box-shadow: 1em 1em var(--tp-shadow-black);
+}
+/* Frame legend is white */
+.dialog-container legend
+{
+    color: var(--tp-foreground-white);
+}
+/* The outline of dialog buttons is disabled */
+.dialog-container button:focus
+{
+    outline: none;
+}
+/* Background in dialog buttons is dark green */
+.dialog-container button
+{
+    background-color: var(--tp-background-green-dark);
+}
+/* Text in dialog buttons is black */
+.dialog-container button
+{
+    color: var(--tp-foreground-black);
+}
+/* Text in dialog default button is cyan */
+.dialog-container button.default
+{
+    color: var(--tp-foreground-cyan);
+}
+/* Text in focused dialog button is white */
+.dialog-container button:focus
+{
+    color: var(--tp-foreground-white)
+}
+/* Text in disabled dialog button is dark grey */
+.dialog-container button.disabled
+{
+    color: var(--tp-foreground-grey-dark);
+}
+/* Background in disabled dialog button is grey */
+.dialog-container button.disabled
+{
+    background-color: var(--tp-background-grey);
+}
+/* Dialog buttons cast a black shadow, even when clicked as disabled  */
+.dialog-container button,
+.dialog-container button.disabled:active
+{
+    box-shadow: 0.5em 0.5em black;
+    border-radius: 0px;
+    border-width: 0px;
+}
+/* When a button is pressed, the shadow disappears */
+.dialog-container button:active
+{
+    box-shadow: 0 0;
+}
+/* When a button is pressed, it moves to the right by 0.5em */
+.dialog-container button:active
+{
+    transform: translateX(0.5em);
+}
+/* Disabled dialog buttons don't animate when pressed */
+.dialog-container button.disabled:active
+{
+    transform: none;
+}
